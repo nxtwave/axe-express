@@ -1,0 +1,62 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!--<a class="navbar-brand" href="#">AXE</a>-->
+      <img src="/images/census-logo-white.png" height="30" style="margin-top: 10px">
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/report/001">Report</a></li>
+        <li class="active"><a href="/about">About</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<div class="container report">
+  <div class="page-header">
+    <h1>About</h1>
+  </div>
+
+  <h1>Test Suite Components</h1>
+
+  <h2>Nodejs</h2>
+  <p>Accessibility tests are run as Nodejs scripts.</p>
+
+  <h2>Chrome Web Driver</h2>
+  <p>A tool for automated web page testing. The tests will launch the browser using this tool, stage it to the correct page and application
+    state, execute tests, and shutdown.</p>
+
+  <h2>Selenium</h2>
+  <p>Axe works with Selenium, a common browser automation tool. It is used to stage a local browser on the target web page and application
+    state to execute an accessibility test. It will retrieve an application page using a URL, and then it may need to either send keys to
+    navigate the page, or it may need to just wait until the application code has executed and rendered the page in the target state.</p>
+
+  <p>For CEDSCI, the URL defines the complete application state. So we should be able to retrieve the URL and wait for something to appear
+    in the DOM which indicates that the page is fully rendered and ready for the accessibility test.</p>
+
+  <h2>Axe</h2>
+  <p>The Axe accessibility tool executes on the web page, as staged by the Selenium commands. The AxeBuilder phases include:</p>
+  <ul>
+    <li>Configuration – set execution options such as the accessibility rules and tags and the page DOM elements to include/exclude,</li>
+    <li>Execution – execute the tests on the target page and elements, and</li>
+    <li>Report – report the results of the test in a JSON object.</li>
+    <li>Through trials we will discover how the builder should be configured and executed to give us the meaningful results.</li>
+  </ul>
+
+  <h2>Test Framework</h2>
+  <p>The accessibility tests can be run using a test framework such as Jasmine with typical “describe”, “it”, “expect” commands to
+    test and report success and failure.</p>
+
+  <h2>Reporting</h2>
+  <p>The Axe execution produces a JSON object which can be written to a raw file, or it can be transformed into a formatted web page
+    using a template tool, such as handlebarsjs. The report pages could be posted to a static site for review.</p>
+
+</div>

@@ -1,0 +1,4424 @@
+{
+	"runtime": "2017-02-01 09:15:31",
+	"inapplicable": [],
+	"incomplete": [],
+	"passes": [
+		{
+			"description": "Ensures buttons have discernible text",
+			"help": "Buttons must have discernible text",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/button-name?application=webdriverjs",
+			"id": "button-name",
+			"impact": null,
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": "View All Publications",
+							"id": "button-has-visible-text",
+							"impact": "critical",
+							"message": "Element has inner text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<button class=\"center-block viewAllButtonSmall\" tabindex=\"512\" title=\"\">\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\tView All Publications\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t</button>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_523 > .center-block.viewAllButtonSmall"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag412",
+				"section508",
+				"section508.22.a"
+			]
+		},
+		{
+			"description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+			"help": "Page must have means to bypass repeated blocks",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/bypass?application=webdriverjs",
+			"id": "bypass",
+			"impact": null,
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "internal-link-present",
+							"impact": "critical",
+							"message": "Valid skip link found",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "header-present",
+							"impact": "moderate",
+							"message": "Page has a header",
+							"relatedNodes": []
+						}
+					],
+					"html": "<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\" class=\" js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths deque-axe-is-ready\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						".js.flexbox.flexboxlegacy.canvas.canvastext.webgl.touch.geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.deque-axe-is-ready"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag241",
+				"section508",
+				"section508.22.o"
+			]
+		},
+		{
+			"description": "Ensures <img> elements have alternate text or a role of none or presentation",
+			"help": "Images must have alternate text",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/image-alt?application=webdriverjs",
+			"id": "image-alt",
+			"impact": null,
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has a title attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/etc/designs/census/images/census-logo.png\" alt=\"United States Census Bureau\" title=\"U.S. Census Bureau\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_190 > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has a title attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img class=\"grid_content_landingImg\" src=\"/content/census/en/library/_jcr_content/herotextimage.texthero.jpg/1449900440921.jpg\" alt=\"library-landing-image-only\" title=\"library-landing-image-only\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#landingHeroMultimedia > .grid_content_landingImg"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img alt=\"null\" src=\"/content/census/en/library/jcr:content/featureicons.featureicon.1.140.medium.png/1439082672853.png\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_508 > span > span:nth-of-type(3) > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img alt=\"null\" src=\"/content/census/en/library/jcr:content/featureicons.featureicon.2.140.medium.png/1439082673384.png\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_510 > span > span:nth-of-type(3) > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img alt=\"null\" src=\"/content/census/en/library/jcr:content/featureicons.featureicon.3.140.medium.png/1439082672907.png\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_512 > span > span:nth-of-type(3) > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/content/census/en/library/publications/2017/acs/acs-36.listitem.png/1471370718999.png\" title=\"\" alt=\"\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_517 > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/content/census/en/library/publications/2016/econ/g16-qspp3.listitem.png/1467315001039.png\" title=\"\" alt=\"\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_519 > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/content/census/en/library/publications/2016/econ/g16-qtax3.listitem.png/1482248621009.png\" title=\"\" alt=\"\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_521 > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has a title attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/content/census/en/topics/population/genealogy.relateditem.png/1439082973641.png\" alt=\"drawing of a tree\" title=\"drawing of a tree\" class=\"grid_content_lookingForImg\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_539 > .grid_content_lookingForImg"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has a title attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/content/census/en/topics/economy.relateditem.png/1439082983524.png\" alt=\"topics-economy-landing-image-only\" title=\"topics-economy-landing-image-only\" class=\"grid_content_lookingForImg\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_541 > .grid_content_lookingForImg"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has a title attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/content/census/en/about/our-research.relateditem.png/1439082982771.png\" alt=\"about-our-research-landing-image-only\" title=\"about-our-research-landing-image-only\" class=\"grid_content_lookingForImg\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_543 > .grid_content_lookingForImg"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has a title attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/content/census/en/data/data-tools.relateditem.png/1439082983041.png\" alt=\"data-data-tools-landing-image-only\" title=\"data-data-tools-landing-image-only\" class=\"grid_content_lookingForImg\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_546 > .grid_content_lookingForImg"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has a title attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/content/census/en/newsroom/facts-for-features.relateditem.png/1439082981946.png\" alt=\"news-facts-features-landing-image-only\" title=\"news-facts-features-landing-image-only\" class=\"grid_content_lookingForImg\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_548 > .grid_content_lookingForImg"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has a title attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/content/census/en/geography/reference.relateditem.png/1439082984280.png\" alt=\"geo-reference-landing-image-only\" title=\"geo-reference-landing-image-only\" class=\"grid_content_lookingForImg\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_550 > .grid_content_lookingForImg"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has a title attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/content/census/en/data/data-tools/american-factfinder.relateditem.png/1439082455245.png\" alt=\"American FactFinder\" title=\"American FactFinder\" class=\"grid_content_lookingForImg\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_553 > .grid_content_lookingForImg"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has a title attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/content/census/en/topics/population/genealogy/agesearch.relateditem.png/1439082520060.png\" alt=\"BC-600:  Application for Search of Census Records\" title=\"BC-600:  Application for Search of Census Records\" class=\"grid_content_lookingForImg\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_555 > .grid_content_lookingForImg"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has a title attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/content/census/en/programs-surveys/acs.relateditem.png/1439082776666.png\" alt=\"American Community Survey (ACS)\" title=\"American Community Survey (ACS)\" class=\"grid_content_lookingForImg\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_557 > .grid_content_lookingForImg"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/etc/designs/census/images/footer-lines.png\" alt=\"Footer line\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#desktopFooter > .footerLinks > span > div:nth-of-type(2) > .foot_col_divider > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/etc/designs/census/images/footer-lines.png\" alt=\"Footer line\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#desktopFooter > .footerLinks > span > div:nth-of-type(3) > .foot_col_divider > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/etc/designs/census/images/footer-lines.png\" alt=\"Footer line\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#desktopFooter > .footerLinks > span > div:nth-of-type(4) > .foot_col_divider > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/etc/designs/census/images/footer-lines.png\" alt=\"Footer line\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#desktopFooter > .footerLinks > span > div:nth-of-type(5) > .foot_col_divider > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/etc/designs/census/images/footer-lines.png\" alt=\"Footer line\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#desktopFooter > .footerLinks > span > div:nth-of-type(6) > .foot_col_divider > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has a title attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/etc/designs/census/images/sm-twitter-btn.png\" alt=\"Twitter\" title=\"Twitter\" style=\"padding-left: 3px;\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_624 > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has a title attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/etc/designs/census/images/sm-facebook-btn.png\" alt=\"Facebook\" title=\"Facebook\" style=\"padding-right: 3px;\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_625 > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has a title attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/etc/designs/census/images/sm-youtube-btn.png\" alt=\"Connect with us on YouTube\" title=\"YouTube\" style=\"padding-right: 3px;\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_626 > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has a title attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"/etc/designs/census/images/govdelivery_16x16.png\" style=\"padding-right: 3px;\" alt=\"Email Updates\" title=\"Email Updates\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#anch_627 > img"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag111",
+				"section508",
+				"section508.22.a"
+			]
+		},
+		{
+			"description": "Ensures links have discernible text",
+			"help": "Links must have discernible text",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/link-name?application=webdriverjs",
+			"id": "link-name",
+			"impact": "critical",
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"184\" href=\"#skiptoplinks\" class=\"offscreen\" id=\"anch_183\">\n\t\t\t\tSkip to main navigation </a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_183"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"https://www.commerce.gov/\" title=\"\" tabindex=\"186\" id=\"anch_184\">U.S. Department of Commerce</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_184"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"https://www.census.gov/about/contact-us/social_media.html\" title=\"\" tabindex=\"187\" id=\"anch_185\">Blogs</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_185"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/index.html\" title=\"\" tabindex=\"188\" id=\"anch_186\">Index A-Z</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_186"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"https://www.census.gov/glossary/\" title=\"\" tabindex=\"189\" id=\"anch_187\">Glossary</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_187"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"https://ask.census.gov/\" title=\"\" tabindex=\"190\" id=\"anch_188\">FAQs</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_188"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"#\" tabindex=\"193\" title=\"United States Census Bureau\" id=\"anch_189\">United States Census Bureau</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_189"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/en.html\" tabindex=\"194\" id=\"anch_190\"> \n\t\t\t\t<img src=\"/etc/designs/census/images/census-logo.png\" alt=\"United States Census Bureau\" title=\"U.S. Census Bureau\">\n\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_190"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"#skipNav\" tabindex=\"195\" class=\"offscreen\" id=\"anch_193\">Skip Main Navigation</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_193"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"#skipNav-CMSContent\" tabindex=\"196\" class=\"offscreen\" id=\"anch_194\">Skip To Navigation Content</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_194"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"#\" onclick=\"toggleDropdown(event, '#NAV_1784167100_1');\" tabindex=\"197\" class=\"accessibleLink\" id=\"anch_195\"> \n\t\t\t\t\t\t   <div class=\"header\"> Topics </div>  \n\t\t\t\t\t\t   <div class=\"subHeader\">Population, Economy </div>\n\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_195"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"#http://www.census.gov/geography.html\" onclick=\"toggleDropdown(event, '#NAV_1059285156_2');\" tabindex=\"198\" class=\"accessibleLink\" id=\"anch_196\"> \n\t\t\t\t\t\t   <div class=\"header\"> Geography </div>  \n\t\t\t\t\t\t   <div class=\"subHeader\">Maps, Products </div>\n\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_196"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"#http://www.census.gov/library.html\" onclick=\"toggleDropdown(event, '#NAV_1830861979_3');\" tabindex=\"199\" class=\"accessibleLink\" id=\"anch_197\"> \n\t\t\t\t\t\t   <div class=\"header\"> Library </div>  \n\t\t\t\t\t\t   <div class=\"subHeader\">Infographics, Publications </div>\n\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_197"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"#http://www.census.gov/data.html\" onclick=\"toggleDropdown(event, '#NAV_2122698_4');\" tabindex=\"200\" class=\"accessibleLink\" id=\"anch_198\"> \n\t\t\t\t\t\t   <div class=\"header\"> Data </div>  \n\t\t\t\t\t\t   <div class=\"subHeader\">Tools, Developers </div>\n\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_198"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"#http://www.census.gov/programs-surveys.html\" onclick=\"toggleDropdown(event, '#NAV_542684251_5');\" tabindex=\"201\" class=\"accessibleLink\" id=\"anch_199\"> \n\t\t\t\t\t\t   <div class=\"header\"> Surveys/Programs </div>  \n\t\t\t\t\t\t   <div class=\"subHeader\">Respond, Survey Data </div>\n\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_199"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"#http://www.census.gov/newsroom.html\" onclick=\"toggleDropdown(event, '#NAV_1460391502_6');\" tabindex=\"202\" class=\"accessibleLink\" id=\"anch_200\"> \n\t\t\t\t\t\t   <div class=\"header\"> Newsroom </div>  \n\t\t\t\t\t\t   <div class=\"subHeader\">News, Blogs </div>\n\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_200"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"#http://www.census.gov/about.html\" onclick=\"toggleDropdown(event, '#NAV_1683946577_7');\" tabindex=\"203\" class=\"accessibleLink\" id=\"anch_201\"> \n\t\t\t\t\t\t   <div class=\"header\"> About Us </div>  \n\t\t\t\t\t\t   <div class=\"subHeader\">Our Research </div>\n\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_201"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/en.html\" onclick=\"CQ_Analytics.record({event:'followBreadcrumb',values: { breadcrumbPath: '/content/census/en.html' },collect: false,options: { obj: this }})\" id=\"anch_489\">Census.gov</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_489"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"#skipsideNav\" class=\"offscreen\" id=\"anch_498\">Skip to looking for section</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_498"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/audio.html\" tabindex=\"500\" style=\"\" id=\"anch_499\">\n    \t\t\t\t\t\t\t\tAudio\n    \t\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_499"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/visualizations.html\" tabindex=\"501\" style=\"\" id=\"anch_500\">\n    \t\t\t\t\t\t\t\tInfographics &amp; Visualizations\n    \t\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_500"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/photos.html\" tabindex=\"502\" style=\"\" id=\"anch_501\">\n    \t\t\t\t\t\t\t\tPhotos\n    \t\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_501"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/publications.html\" tabindex=\"503\" style=\"\" id=\"anch_502\">\n    \t\t\t\t\t\t\t\tPublications\n    \t\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_502"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/reference.html\" tabindex=\"504\" style=\"\" id=\"anch_503\">\n    \t\t\t\t\t\t\t\tReference\n    \t\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_503"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/video.html\" tabindex=\"506\" style=\"\" id=\"anch_505\">\n    \t\t\t\t\t\t\t\tVideos\n    \t\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_505"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/working-papers.html\" tabindex=\"507\" style=\"\" id=\"anch_506\">\n    \t\t\t\t\t\t\t\tWorking Papers\n    \t\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_506"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/measuring-america.html\" target=\"_self\" id=\"anch_508\">",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_508"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/measuring-america.html\" target=\"_self\" id=\"anch_509\">\n\t\t\t\t\t\t\t\t<span>Measuring America</span>\n\t\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_509"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/data/visualizations.html\" target=\"_self\" id=\"anch_510\">",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_510"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/data/visualizations.html\" target=\"_self\" id=\"anch_511\">\n\t\t\t\t\t\t\t\t<span>Visualizations</span>\n\t\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_511"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/newsroom/cspan/\" target=\"_blank\" id=\"anch_512\">",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_512"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/newsroom/cspan/\" target=\"_blank\" id=\"anch_513\">\n\t\t\t\t\t\t\t\t<span>America by the Numbers</span>\n\t\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_513"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"#tab1\" tabindex=\"508\" class=\"active\" id=\"anch_514\">\n        \t\t<div class=\"\">Publications</div>\n        \t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_514"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"#tab2\" tabindex=\"509\" id=\"anch_515\">\n        \t\t<div class=\"\">Working Papers</div>\n        \t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_515"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"#tab3\" tabindex=\"510\" id=\"anch_516\">\n        \t\t<div class=\"\">Infographics</div>\n        \t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_516"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/publications/2017/acs/acs-36.html\" tabindex=\"511\" title=\"Veterans in Rural America\" id=\"anch_518\">Veterans in Rural America\n\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_518"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/publications/2016/econ/g16-qspp3.html\" tabindex=\"511\" title=\"Summary of the Quarterly Survey of Public Pensions for 2016: Q3\" id=\"anch_520\">Summary of the Quarterly Survey of Public Pensions for 2016: Q3\n\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_520"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/publications/2016/econ/g16-qtax3.html\" tabindex=\"511\" title=\"Quarterly Summary of State and Local Government Tax Revenue: 2016 Q3\" id=\"anch_522\">Quarterly Summary of State and Local Government Tax Revenue: 2016 Q3\n\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_522"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/publications.html\" id=\"anch_523\">\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t<button class=\"center-block viewAllButtonSmall\" tabindex=\"512\" title=\"\">\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\tView All Publications\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t</button>\t\n\t\t\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_523"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"518\" href=\"/topics/population/genealogy.html\" id=\"anch_539\">\n\t\t\t\t\t\t            \t\t<img src=\"/content/census/en/topics/population/genealogy.relateditem.png/1439082973641.png\" alt=\"drawing of a tree\" title=\"drawing of a tree\" class=\"grid_content_lookingForImg\">\n\t\t\t\t\t\t            \t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_539"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"519\" href=\"/topics/population/genealogy.html\" id=\"anch_540\">Genealogy</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_540"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"520\" href=\"/topics/economy.html\" id=\"anch_541\">",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_541"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"521\" href=\"/topics/economy.html\" id=\"anch_542\">Economy</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_542"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"522\" href=\"/about/our-research.html\" id=\"anch_543\">",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_543"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"523\" href=\"/about/our-research.html\" id=\"anch_544\">Our Research</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_544"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"519\" href=\"/data/data-tools.html\" id=\"anch_546\">",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_546"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"520\" href=\"/data/data-tools.html\" id=\"anch_547\">Data Tools and Apps</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_547"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"521\" href=\"/newsroom/facts-for-features.html\" id=\"anch_548\">",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_548"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"522\" href=\"/newsroom/facts-for-features.html\" id=\"anch_549\">Facts for Features</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_549"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"523\" href=\"/geography/reference.html\" id=\"anch_550\">",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_550"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"524\" href=\"/geography/reference.html\" id=\"anch_551\">Reference</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_551"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"520\" href=\"/data/data-tools/american-factfinder.html\" id=\"anch_553\">",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_553"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"521\" href=\"/data/data-tools/american-factfinder.html\" id=\"anch_554\">American FactFinder</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_554"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"522\" href=\"/topics/population/genealogy/agesearch.html\" id=\"anch_555\">",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_555"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"523\" href=\"/topics/population/genealogy/agesearch.html\" id=\"anch_556\">Age Search Service</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_556"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"524\" href=\"/programs-surveys/acs\" id=\"anch_557\">",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_557"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a tabindex=\"525\" href=\"/programs-surveys/acs\" id=\"anch_558\">American Community Survey (ACS)</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_558"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"#skipfooter\" class=\"offscreen\" id=\"anch_560\">Skip to top of page</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_560"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/about.html\" title=\"\" tabindex=\"527\" id=\"anch_561\">\n\t\t\t\t\t\t\tABOUT US\n\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_561"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/programs-surveys/are-you-in-a-survey.html\" title=\"\" tabindex=\"528\" id=\"anch_562\">Are You in a Survey?</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_562"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"https://ask.census.gov\" title=\"\" tabindex=\"529\" id=\"anch_563\">FAQs</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_563"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/leadership.html\" title=\"\" tabindex=\"530\" id=\"anch_564\">Director's Corner</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_564"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/regions.html\" title=\"\" tabindex=\"531\" id=\"anch_565\">Regional Offices</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_565"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/history.html\" title=\"\" tabindex=\"532\" id=\"anch_566\">History</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_566"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/our-research.html\" title=\"\" tabindex=\"533\" id=\"anch_567\">Research</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_567"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/policies/quality/scientific_integrity.html\" title=\"\" tabindex=\"534\" id=\"anch_568\">Scientific Integrity</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_568"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/census-careers.html\" title=\"\" tabindex=\"535\" id=\"anch_569\">Census Careers</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_569"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/diversity-networks.html\" title=\"\" tabindex=\"536\" id=\"anch_570\">Diversity @ Census</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_570"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/business-opportunities.html\" title=\"\" tabindex=\"537\" id=\"anch_571\">Business Opportunities</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_571"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/cong-gov-affairs.html\" title=\"\" tabindex=\"538\" id=\"anch_572\">Congressional and Intergovernmental</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_572"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/contact-us.html\" title=\"\" tabindex=\"539\" id=\"anch_573\">Contact Us</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_573"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/data.html\" title=\"\" tabindex=\"540\" id=\"anch_574\">\n\t\t\t\t\t\t\tFIND DATA\n\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_574"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/data/data-tools/quickfacts.html\" title=\"\" tabindex=\"541\" id=\"anch_575\">QuickFacts</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_575"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/data/data-tools/american-factfinder.html\" title=\"\" tabindex=\"542\" id=\"anch_576\">American FactFinder</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_576"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/data/data-tools/interactive-population-map.html\" title=\"\" tabindex=\"543\" id=\"anch_577\">Population Finder</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_577"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/programs-surveys/decennial-census/2010-census.html\" title=\"\" tabindex=\"544\" id=\"anch_578\">2010 Census</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_578"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/programs-surveys/economic-census.html\" title=\"\" tabindex=\"545\" id=\"anch_579\">Economic Census</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_579"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/geography/interactive-maps.html\" title=\"\" tabindex=\"546\" id=\"anch_580\">Interactive Maps</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_580"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/data/training-workshops.html\" title=\"\" tabindex=\"547\" id=\"anch_581\">Training &amp; Workshops</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_581"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/data/data-tools.html\" title=\"\" tabindex=\"548\" id=\"anch_582\">Data Tools</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_582"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/developers/\" title=\"\" tabindex=\"549\" id=\"anch_583\">Developers</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_583"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/data/product-catalog.html\" title=\"\" tabindex=\"550\" id=\"anch_584\">Catalogs</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_584"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/library/publications.html\" title=\"\" tabindex=\"551\" id=\"anch_585\">Publications</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_585"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/topics/business/business-help.html\" title=\"\" tabindex=\"552\" id=\"anch_586\">Help With Your Forms</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_586"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/topics/economy/economic-indicators.html\" title=\"\" tabindex=\"553\" id=\"anch_587\">Economic Indicators</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_587"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/programs-surveys/economic-census.html\" title=\"\" tabindex=\"554\" id=\"anch_588\">Economic Census</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_588"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/programs-surveys/e-stats.html\" title=\"\" tabindex=\"555\" id=\"anch_589\">E-Stats</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_589"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/topics/international-trade.html\" title=\"\" tabindex=\"556\" id=\"anch_590\">International Trade</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_590"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/topics/international-trade/schedule-b.html\" title=\"\" tabindex=\"557\" id=\"anch_591\">Export Codes</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_591"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/topics/economy/classification-codes.html\" title=\"\" tabindex=\"558\" id=\"anch_592\">NAICS</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_592"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/topics/public-sector.html\" title=\"\" tabindex=\"559\" id=\"anch_593\">Governments</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_593"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/topics/employment/led.html\" title=\"\" tabindex=\"560\" id=\"anch_594\">Local Employment Dynamics</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_594"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/programs-surveys/sbo.html\" title=\"\" tabindex=\"561\" id=\"anch_595\">Survey of Business Owners</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_595"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/2020census\" title=\"\" tabindex=\"562\" id=\"anch_596\">2020 Census</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_596"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/programs-surveys/decennial-census/2010-census.html\" title=\"\" tabindex=\"563\" id=\"anch_597\">2010 Census</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_597"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/programs-surveys/acs\" title=\"\" tabindex=\"564\" id=\"anch_598\">American Community Survey</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_598"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/topics/income-poverty/income.html\" title=\"\" tabindex=\"565\" id=\"anch_599\">Income</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_599"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/topics/income-poverty/poverty.html\" title=\"\" tabindex=\"566\" id=\"anch_600\">Poverty</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_600"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/popest\" title=\"\" tabindex=\"567\" id=\"anch_601\">Population Estimates</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_601"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/topics/population/population-projections.html\" title=\"\" tabindex=\"568\" id=\"anch_602\">Population Projections</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_602"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/topics/health/health-insurance.html\" title=\"\" tabindex=\"569\" id=\"anch_603\">Health Insurance</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_603"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/topics/housing.html\" title=\"\" tabindex=\"570\" id=\"anch_604\">Housing</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_604"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/topics/population/international.html\" title=\"\" tabindex=\"571\" id=\"anch_605\">International</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_605"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/topics/population/genealogy.html\" title=\"\" tabindex=\"572\" id=\"anch_606\">Genealogy</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_606"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/partners.html\" title=\"\" tabindex=\"573\" id=\"anch_607\">Advisors, Centers and Research Programs</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_607"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/programs-surveys/sis.html\" title=\"\" tabindex=\"574\" id=\"anch_608\">Statistics in Schools</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_608"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/cong-gov-affairs/intergovernmental-affairs/tribal-affairs/tribal-resources.html\" title=\"\" tabindex=\"575\" id=\"anch_609\">Tribal Resources (AIAN)</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_609"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/topics/preparedness.html\" title=\"\" tabindex=\"576\" id=\"anch_610\">Emergency Preparedness</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_610"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/library/publications/time-series/statistical_abstracts.html\" title=\"\" tabindex=\"577\" id=\"anch_611\">Statistical Abstract</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_611"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/programs-surveys/specialcensus.html\" title=\"\" tabindex=\"578\" id=\"anch_612\">Special Census Program</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_612"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/datalinkage\" title=\"\" tabindex=\"579\" id=\"anch_613\">Data Linkage Infrastructure</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_613"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/programs-surveys/are-you-in-a-survey/fraudulent-activity-and-scams.html\" title=\"\" tabindex=\"580\" id=\"anch_614\">Fraudulent Activity &amp; Scams</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_614"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"https://www.usa.gov\" title=\"\" tabindex=\"581\" id=\"anch_615\">USA.gov</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_615"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"https://business.usa.gov\" title=\"\" tabindex=\"582\" id=\"anch_616\">BusinessUSA.gov</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_616"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/newsroom.html\" title=\"\" tabindex=\"583\" id=\"anch_617\">\n\t\t\t\t\t\t\tNEWSROOM\n\t\t\t\t\t\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_617"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/newsroom/press-releases.html\" title=\"\" tabindex=\"584\" id=\"anch_618\">News Releases</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_618"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"https://www.calendarwiz.com/calendars/calendar.php?crd=cens1sample&amp;cid=31793\" title=\"\" tabindex=\"585\" target=\"_blank\" id=\"anch_619\">Release Schedule</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_619"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/newsroom/facts-for-features.html\" title=\"\" tabindex=\"586\" id=\"anch_620\">Facts for Features</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_620"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/newsroom/stories.html\" title=\"\" tabindex=\"587\" id=\"anch_621\">Stats for Stories</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_621"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/blogs\" title=\"\" tabindex=\"588\" id=\"anch_622\">Blogs</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_622"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a class=\"foot_bottom_socialLinks\" href=\"http://www.census.gov/about/contact-us/social_media.html\" target=\"new\" tabindex=\"589\" id=\"anch_623\">CONNECT WITH US</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_623"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a class=\"foot_bottom_socialLinks\" href=\"http://twitter.com/uscensusbureau\" target=\"_blank\" tabindex=\"590\" id=\"anch_624\"> <img src=\"/etc/designs/census/images/sm-twitter-btn.png\" alt=\"Twitter\" title=\"Twitter\" style=\"padding-left: 3px;\">\n\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_624"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a class=\"foot_bottom_socialLinks\" href=\"https://www.facebook.com/uscensusbureau\" target=\"_blank\" tabindex=\"591\" id=\"anch_625\"> <img src=\"/etc/designs/census/images/sm-facebook-btn.png\" alt=\"Facebook\" title=\"Facebook\" style=\"padding-right: 3px;\">\n\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_625"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a class=\"foot_bottom_socialLinks\" href=\"http://www.youtube.com/user/uscensusbureau\" target=\"_blank\" tabindex=\"592\" id=\"anch_626\"> <img src=\"/etc/designs/census/images/sm-youtube-btn.png\" alt=\"Connect with us on YouTube\" title=\"YouTube\" style=\"padding-right: 3px;\">\n\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_626"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a class=\"foot_bottom_socialLinks\" href=\"https://public.govdelivery.com/accounts/USCENSUS/subscriber/new\" target=\"new\" tabindex=\"593\" id=\"anch_627\"> <img src=\"/etc/designs/census/images/govdelivery_16x16.png\" style=\"padding-right: 3px;\" alt=\"Email Updates\" title=\"Email Updates\">\n\t</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_627"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/policies/privacy/privacy-policy.html#par_textimage_1\" title=\"\" tabindex=\"594\" id=\"anch_628\">Accessibility</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_628"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/quality/\" title=\"\" tabindex=\"595\" id=\"anch_629\">Information Quality</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_629"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/foia/\" title=\"\" tabindex=\"596\" id=\"anch_630\">FOIA</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_630"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/privacy/\" title=\"\" tabindex=\"597\" id=\"anch_631\">Data Protection and Privacy Policy</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_631"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"https://www.commerce.gov/\" title=\"\" tabindex=\"598\" id=\"anch_632\">U.S. Department of Commerce</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_632"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag111",
+				"wcag412",
+				"section508",
+				"section508.22.a"
+			]
+		}
+	],
+	"timestamp": "2017-02-01T14:15:31.636Z",
+	"url": "http://www.census.gov/library.html",
+	"violations": [
+		{
+			"description": "Ensures <input type=\"image\"> elements have alternate text",
+			"help": "Image buttons must have alternate text",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/input-image-alt?application=webdriverjs",
+			"id": "input-image-alt",
+			"impact": "critical",
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "non-empty-alt",
+							"impact": "critical",
+							"message": "Element has no alt attribute or the alt attribute is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has no title attribute or the title attribute is empty",
+							"relatedNodes": []
+						}
+					],
+					"html": "<input tabindex=\"192\" name=\"search\" type=\"image\" value=\"submit\" src=\"/etc/designs/census/images/search-btn.png\">",
+					"impact": "critical",
+					"none": [],
+					"target": [
+						"#searchForm > fieldset > .searchbtn > label > input"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag111",
+				"section508",
+				"section508.22.a"
+			]
+		},
+		{
+			"description": "Ensures every form element has a label",
+			"help": "Form elements must have labels",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/label?application=webdriverjs",
+			"id": "label",
+			"impact": "critical",
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "implicit-label",
+							"impact": "critical",
+							"message": "Form element does not have an implicit (wrapped) <label>",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "explicit-label",
+							"impact": "critical",
+							"message": "Form element does not have an explicit <label>",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has no title attribute or the title attribute is empty",
+							"relatedNodes": []
+						}
+					],
+					"html": "<input tabindex=\"191\" type=\"text\" name=\"q\" id=\"searchbox\" value=\"Search\" onfocus=\"if(this.value=='Search'){this.value=''}\" onblur=\"if(this.value==''){this.value='Search'}\" autocomplete=\"off\" class=\"ui-autocomplete-input\">",
+					"impact": "critical",
+					"none": [],
+					"target": [
+						"#searchbox"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag332",
+				"wcag131",
+				"section508",
+				"section508.22.n"
+			]
+		},
+		{
+			"description": "Ensures links have discernible text",
+			"help": "Links must have discernible text",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/link-name?application=webdriverjs",
+			"id": "link-name",
+			"impact": "critical",
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element does not have text that is visible to screen readers",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "role-presentation",
+							"impact": "moderate",
+							"message": "Element's default semantics were not overridden with role=\"presentation\"",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "role-none",
+							"impact": "moderate",
+							"message": "Element's default semantics were not overridden with role=\"none\"",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/publications/2017/acs/acs-36.html\" id=\"anch_517\"><img src=\"/content/census/en/library/publications/2017/acs/acs-36.listitem.png/1471370718999.png\" title=\"\" alt=\"\">\n\t\t\t\t</a>",
+					"impact": "critical",
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is in tab order and does not have accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_517"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element does not have text that is visible to screen readers",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "role-presentation",
+							"impact": "moderate",
+							"message": "Element's default semantics were not overridden with role=\"presentation\"",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "role-none",
+							"impact": "moderate",
+							"message": "Element's default semantics were not overridden with role=\"none\"",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/publications/2016/econ/g16-qspp3.html\" id=\"anch_519\"><img src=\"/content/census/en/library/publications/2016/econ/g16-qspp3.listitem.png/1467315001039.png\" title=\"\" alt=\"\">\n\t\t\t\t</a>",
+					"impact": "critical",
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is in tab order and does not have accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_519"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element does not have text that is visible to screen readers",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "role-presentation",
+							"impact": "moderate",
+							"message": "Element's default semantics were not overridden with role=\"presentation\"",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "role-none",
+							"impact": "moderate",
+							"message": "Element's default semantics were not overridden with role=\"none\"",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/library/publications/2016/econ/g16-qtax3.html\" id=\"anch_521\"><img src=\"/content/census/en/library/publications/2016/econ/g16-qtax3.listitem.png/1482248621009.png\" title=\"\" alt=\"\">\n\t\t\t\t</a>",
+					"impact": "critical",
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is in tab order and does not have accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#anch_521"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag111",
+				"wcag412",
+				"section508",
+				"section508.22.a"
+			]
+		},
+		{
+			"description": "Ensures <object> elements have alternate text",
+			"help": "<object> elements must have alternate text",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/object-alt?application=webdriverjs",
+			"id": "object-alt",
+			"impact": "critical",
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element does not have text that is visible to screen readers",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has no title attribute or the title attribute is empty",
+							"relatedNodes": []
+						}
+					],
+					"html": "<object width=\"1\" height=\"1\" id=\"_fsr_swfContainerv2_\" name=\"_fsr_swfContainerv2_\" data=\"//www.census.gov/fsrscripts/foresee-transport.swf\" type=\"application/x-shockwave-flash\">",
+					"impact": "critical",
+					"none": [],
+					"target": [
+						"#_fsr_swfContainerv2_"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag111",
+				"section508",
+				"section508.22.a"
+			]
+		}
+	]
+}

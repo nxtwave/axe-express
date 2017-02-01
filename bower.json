@@ -1,0 +1,24 @@
+{
+  "name": "axe-express",
+  "description": "axe accessibility proof-of-concept",
+  "main": "",
+  "authors": [
+    "paul fischer",
+    "accenture federal services"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "axe"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

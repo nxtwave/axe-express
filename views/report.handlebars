@@ -1,0 +1,130 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!--<a class="navbar-brand" href="#">AXE</a>-->
+      <img src="/images/census-logo-white.png" height="30" style="margin-top: 10px">
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li class="active"><a href="/report/001">Report</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<div class="container report">
+  <div class="page-header">
+    <h1>CEDSCI-UI Accessibility Report</h1>
+  </div>
+
+  {{#results}}
+
+    <section class="row">
+      <div class="col-lg-12">
+        <h1>Test Overview</h1>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Tested URL</th>
+            <td><a href="{{this.url}}">{{this.url}}</a></td>
+          </tr>
+          <tr>
+            <th>Accessibility Test</th>
+            <td>Section 508</td>
+          </tr>
+          <tr>
+            <th>Runtime</th>
+            <td>{{this.runtime}}</td>
+          </tr>
+          <tr>
+            <th>Status</th>
+            <td>{{this.violations.length}} Violations</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="col-lg-12">
+        <h1>Violation Summary</h1>
+        <table class="table table-striped table-bordered">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Violation Rule</th>
+            <th># of Occurences</th>
+          </tr>
+          </thead>
+          <tbody>
+          {{#each violations}}
+            <tr>
+              <td>{{@index}}</td>
+              <td>{{this.description}}</td>
+              <td>{{this.nodes.length}}</td>
+            </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="col-lg-12">
+        <h1>Violation Detail</h1>
+      </div>
+    </section>
+
+    {{#each violations}}
+      <section class="row">
+        <div class="col-lg-12">
+          <h2>{{this.description}}</h2>
+          <table class="table">
+            <tr>
+              <th>ID</th>
+              <td>{{this.id}}</td>
+            </tr>
+            <tr>
+              <th>Help</th>
+              <td>{{this.help}}</td>
+            </tr>
+            <tr>
+              <th>Info</th>
+              <td><a href="{{this.helpUrl}}">{{this.helpUrl}}</td>
+            </tr>
+            <tr>
+              <th>Impact</th>
+              <td class="highlight">{{this.impact}}</td>
+            </tr>
+            {{#each nodes}}
+              <tr>
+                {{#if @first}}
+                  <th>Nodes</th>
+                {{else}}
+                  <th>&nbsp;</th>
+                {{/if}}
+                <td><samp>{{this.html}}</samp></td>
+              </tr>
+            {{/each}}
+          </table>
+        </div>
+      </section>
+    {{/each}}
+
+  {{/results}}
+
+  <hr/>
+
+</div>
+
+
+
+
+
+

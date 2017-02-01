@@ -1,0 +1,934 @@
+{
+	"runtime": "2017-01-31 14:52:23",
+	"inapplicable": [],
+	"incomplete": [],
+	"passes": [
+		{
+			"description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+			"help": "Page must have means to bypass repeated blocks",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/bypass?application=webdriverjs",
+			"id": "bypass",
+			"impact": null,
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "header-present",
+							"impact": "moderate",
+							"message": "Page has a header",
+							"relatedNodes": []
+						}
+					],
+					"html": "<html ng-app=\"cedsciFacetedApp\" id=\"censussearchresults-page\" class=\"dj_webkit dj_chrome dj_contentbox ng-scope deque-axe-is-ready\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#censussearchresults-page"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag241",
+				"section508",
+				"section508.22.o"
+			]
+		},
+		{
+			"description": "Ensures links have discernible text",
+			"help": "Links must have discernible text",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/link-name?application=webdriverjs",
+			"id": "link-name",
+			"impact": "critical",
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"mailto:cedsci.feedback@census.gov?Subject=CEDSCI%20Feedback\" title=\"Submit Feedback\">cedsci.feedback@census.gov</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > div > div:nth-of-type(3) > .header-fixed.ng-scope > .header-fixed-background > .feedbackLinkHeader.pull-right > a"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/data.html\">census.gov/data.html</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > div > .indexSubBanner > .wrapper > p > a"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"home\" ng-click=\"showDataExplorerPage()\">data.census.gov preview</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#navigatedSearch > div > div:nth-of-type(1) > .navigatedSearchPanel.col-lg-12.col-md-12.col-sm-12.col-xs-12 > h1 > a"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a class=\"button-primary\" href=\"\" ng-click=\"queryData();\">Search Data</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#topicSelectionMainContent > .col-lg-6.col-md-6.col-sm-6.col-xs-12.rightColumn > .rightColumn-top > .viewDataButtonContainer > .button-primary"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a class=\"pull-right listLink\" href=\"\" ng-show=\"!showTopicList\" ng-click=\"showTopicList = !showTopicList\">Topics List</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#topicSelectionMainContent > .row.col-lg-6.col-md-6.col-sm-6.col-xs-12.leftColumn > div:nth-of-type(1) > a:nth-of-type(1)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a ng-click=\"openModal()\" href=\"\" class=\"clickableLink listLink\">Selection Map</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#topicSelectionMainContent > .row.col-lg-6.col-md-6.col-sm-6.col-xs-12.leftColumn > .esriShowHideMapButton > geo-selection-map-modal > .clickableLink.listLink"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a ng-click=\"openMoreGeographyModal()\" href=\"\" class=\"pull-right listLink\">Geographies List</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#topicSelectionMainContent > .row.col-lg-6.col-md-6.col-sm-6.col-xs-12.leftColumn > .esriShowHideMapButton > more-geographies-modal > .pull-right.listLink"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a class=\"pull-right listLink\" href=\"\" ng-show=\"!showIndustryList\" ng-click=\"showIndustryList = !showIndustryList\">Industries List</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#topicSelectionMainContent > .row.col-lg-6.col-md-6.col-sm-6.col-xs-12.leftColumn > div:nth-of-type(4) > a:nth-of-type(1)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"mailto:cedsci.feedback@census.gov?Subject=CEDSCI%20Feedback\">cedsci.feedback@census.gov</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > div > div:nth-of-type(6) > .footer-container.ng-scope > .row > .wrapper > .centeredText > a"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/policies/privacy/privacy-policy.html#par_textimage_1\" target=\"blank\" title=\"\">\n                       Accessibility\n                    </a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > div > div:nth-of-type(6) > .footer-container.ng-scope > .footer-stripped > .wrapper > .col-xs-12 > a:nth-of-type(1)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/quality/\" target=\"blank\" title=\"\">\n                       Information Quality\n                    </a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > div > div:nth-of-type(6) > .footer-container.ng-scope > .footer-stripped > .wrapper > .col-xs-12 > a:nth-of-type(2)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/foia/\" target=\"blank\" title=\"\">\n                       FOIA\n                    </a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > div > div:nth-of-type(6) > .footer-container.ng-scope > .footer-stripped > .wrapper > .col-xs-12 > a:nth-of-type(3)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/privacy/\" target=\"blank\" title=\"\">\n                       Data Protection and Privacy Policy\n                    </a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > div > div:nth-of-type(6) > .footer-container.ng-scope > .footer-stripped > .wrapper > .col-xs-12 > a:nth-of-type(4)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"https://www.commerce.gov/\" target=\"blank\" title=\"\">\n                       U.S. Department of Commerce\n                    </a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > div > div:nth-of-type(6) > .footer-container.ng-scope > .footer-stripped > .wrapper > .col-xs-12 > a:nth-of-type(5)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a title=\"View Release Notes\" class=\"clickableLink releaseNotes\" href=\"./assets/Technology Preview Release Notes.docx\">Release Notes</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > div > div:nth-of-type(6) > .footer-container.ng-scope > .footer-stripped > .wrapper > .col-xs-12 > .clickableLink.releaseNotes"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag111",
+				"wcag412",
+				"section508",
+				"section508.22.a"
+			]
+		}
+	],
+	"timestamp": "2017-01-31T19:52:23.891Z",
+	"url": "https://data.census.gov/preview/dataExplorer",
+	"violations": [
+		{
+			"description": "Ensures <img> elements have alternate text or a role of none or presentation",
+			"help": "Images must have alternate text",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/image-alt?application=webdriverjs",
+			"id": "image-alt",
+			"impact": "critical",
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element does not have an alt attribute",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has no title attribute or the title attribute is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "role-presentation",
+							"impact": "moderate",
+							"message": "Element's default semantics were not overridden with role=\"presentation\"",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "role-none",
+							"impact": "moderate",
+							"message": "Element's default semantics were not overridden with role=\"none\"",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"images/census-logo-white.png\">",
+					"impact": "critical",
+					"none": [],
+					"target": [
+						"#innerPage > div > div:nth-of-type(3) > .header-fixed.ng-scope > .header-logo > img"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag111",
+				"section508",
+				"section508.22.a"
+			]
+		},
+		{
+			"description": "Ensures every form element has a label",
+			"help": "Form elements must have labels",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/label?application=webdriverjs",
+			"id": "label",
+			"impact": "critical",
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "implicit-label",
+							"impact": "critical",
+							"message": "Form element does not have an implicit (wrapped) <label>",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "explicit-label",
+							"impact": "critical",
+							"message": "Form element does not have an explicit <label>",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has no title attribute or the title attribute is empty",
+							"relatedNodes": []
+						}
+					],
+					"html": "<input type=\"text\" ng-model=\"topicSelected\" ng-model-options=\"{debounce:333}\" placeholder=\"Enter a topic name\" typeahead=\"topic as topic.name for topic in facets.typeAheadTopicsList | validFacets | filter:{name:$viewValue} | limitTo:10\" typeahead-editable=\"false\" typeahead-on-select=\"handleTypeAheadTopicSelect(topicSelected); topicSelected='';\" class=\"form-control  ng-pristine ng-untouched ng-valid ng-valid-editable\" aria-autocomplete=\"list\" aria-expanded=\"false\" aria-owns=\"typeahead-24-8379\">",
+					"impact": "critical",
+					"none": [],
+					"target": [
+						"#topicSelectionMainContent > .row.col-lg-6.col-md-6.col-sm-6.col-xs-12.leftColumn > input:nth-of-type(1)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "implicit-label",
+							"impact": "critical",
+							"message": "Form element does not have an implicit (wrapped) <label>",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "explicit-label",
+							"impact": "critical",
+							"message": "Form element does not have an explicit <label>",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has no title attribute or the title attribute is empty",
+							"relatedNodes": []
+						}
+					],
+					"html": "<input type=\"text\" ng-model=\"locationSelected\" ng-model-options=\"{debounce:333}\" placeholder=\"Enter a state, county or city\" typeahead=\"location as location.name for location in handleGeoTypeAheadData($viewValue)\" typeahead-editable=\"false\" class=\"form-control ng-pristine ng-untouched ng-valid ng-valid-editable\" typeahead-on-select=\"handleTypeAheadGeoSelect(locationSelected); locationSelected='';\" aria-autocomplete=\"list\" aria-expanded=\"false\" aria-owns=\"typeahead-26-1904\">",
+					"impact": "critical",
+					"none": [],
+					"target": [
+						"#topicSelectionMainContent > .row.col-lg-6.col-md-6.col-sm-6.col-xs-12.leftColumn > input:nth-of-type(2)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "implicit-label",
+							"impact": "critical",
+							"message": "Form element does not have an implicit (wrapped) <label>",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "explicit-label",
+							"impact": "critical",
+							"message": "Form element does not have an explicit <label>",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has no title attribute or the title attribute is empty",
+							"relatedNodes": []
+						}
+					],
+					"html": "<input type=\"text\" ng-model=\"naicsSelected\" ng-model-options=\"{debounce:333}\" placeholder=\"Enter an industry name\" typeahead=\"naicsFacet as naicsFacet.code + ' - ' + naicsFacet.name for naicsFacet in handleNaicsTypeAhead($viewValue) | limitTo: 10\" typeahead-editable=\"false\" class=\"form-control typeaheadRectange ng-pristine ng-untouched ng-valid ng-valid-editable\" ng-disabled=\"disableNAICSFacets\" typeahead-on-select=\"handleTypeAheadNaicsSelect(naicsSelected); naicsSelected='';\" aria-autocomplete=\"list\" aria-expanded=\"false\" aria-owns=\"typeahead-27-1901\">",
+					"impact": "critical",
+					"none": [],
+					"target": [
+						"#topicSelectionMainContent > .row.col-lg-6.col-md-6.col-sm-6.col-xs-12.leftColumn > .form-control.typeaheadRectange.ng-pristine.ng-untouched.ng-valid.ng-valid-editable"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "implicit-label",
+							"impact": "critical",
+							"message": "Form element does not have an implicit (wrapped) <label>",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "explicit-label",
+							"impact": "critical",
+							"message": "Form element does not have an explicit <label>",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has no title attribute or the title attribute is empty",
+							"relatedNodes": []
+						}
+					],
+					"html": "<select class=\"form-control  ng-pristine ng-untouched ng-valid\" ng-options=\"vintage as vintage.name + ' (' + abbrevCountNumber(vintage.count) + ')' for vintage in filterOutFacetsWithZeroCounts (facets.vintages.list) \" ng-model=\"selectedVintage.value\" ng-change=\"handleVintageSelect(selectedVintage.value);\">",
+					"impact": "critical",
+					"none": [],
+					"target": [
+						"#topicSelectionMainContent > .row.col-lg-6.col-md-6.col-sm-6.col-xs-12.leftColumn > div:nth-of-type(6) > .form-control.ng-pristine.ng-untouched.ng-valid"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "implicit-label",
+							"impact": "critical",
+							"message": "Form element does not have an implicit (wrapped) <label>",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "explicit-label",
+							"impact": "critical",
+							"message": "Form element does not have an explicit <label>",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has no title attribute or the title attribute is empty",
+							"relatedNodes": []
+						}
+					],
+					"html": "<select class=\"form-control  ng-pristine ng-untouched ng-valid\" ng-options=\"dset as dset.name for dset in filterOutFacetsWithZeroCounts(facets.datasets.list) \" ng-model=\"selectedDataSet.value\" ng-change=\"handleDataSetSelect(selectedDataSet.value);\">",
+					"impact": "critical",
+					"none": [],
+					"target": [
+						"#topicSelectionMainContent > .row.col-lg-6.col-md-6.col-sm-6.col-xs-12.leftColumn > div:nth-of-type(7) > .form-control.ng-pristine.ng-untouched.ng-valid"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "implicit-label",
+							"impact": "critical",
+							"message": "Form element does not have an implicit (wrapped) <label>",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "explicit-label",
+							"impact": "critical",
+							"message": "Form element does not have an explicit <label>",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has no title attribute or the title attribute is empty",
+							"relatedNodes": []
+						}
+					],
+					"html": "<select class=\"form-control  ng-pristine ng-untouched ng-valid\" ng-options=\"program as program.name + ' (' + abbrevCountNumber(program.count) + ')'  for program in filterOutFacetsWithZeroCounts(facets.programs.list) \" ng-model=\"selectedPrograms.value\" ng-change=\"handleProgramsSelect(selectedPrograms.value);\">",
+					"impact": "critical",
+					"none": [],
+					"target": [
+						"#topicSelectionMainContent > .row.col-lg-6.col-md-6.col-sm-6.col-xs-12.leftColumn > div:nth-of-type(8) > .form-control.ng-pristine.ng-untouched.ng-valid"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag332",
+				"wcag131",
+				"section508",
+				"section508.22.n"
+			]
+		},
+		{
+			"description": "Ensures links have discernible text",
+			"help": "Links must have discernible text",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/link-name?application=webdriverjs",
+			"id": "link-name",
+			"impact": "critical",
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element does not have text that is visible to screen readers",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "role-presentation",
+							"impact": "moderate",
+							"message": "Element's default semantics were not overridden with role=\"presentation\"",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "role-none",
+							"impact": "moderate",
+							"message": "Element's default semantics were not overridden with role=\"none\"",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/\" class=\"header-logo\"><img src=\"images/census-logo-white.png\"></a>",
+					"impact": "critical",
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is in tab order and does not have accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > div > div:nth-of-type(3) > .header-fixed.ng-scope > .header-logo"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element does not have text that is visible to screen readers",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "role-presentation",
+							"impact": "moderate",
+							"message": "Element's default semantics were not overridden with role=\"presentation\"",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "role-none",
+							"impact": "moderate",
+							"message": "Element's default semantics were not overridden with role=\"none\"",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"\" class=\"hideSubBannerLink\" ng-click=\"hideSubBanner = true\"><i class=\"fa fa-times-circle\" aria-hidden=\"true\"></i></a>",
+					"impact": "critical",
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is in tab order and does not have accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > div > .indexSubBanner > .wrapper > .hideSubBannerLink"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag111",
+				"wcag412",
+				"section508",
+				"section508.22.a"
+			]
+		}
+	]
+}

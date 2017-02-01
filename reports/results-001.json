@@ -1,0 +1,708 @@
+{
+	"runtime": "2017-02-01 09:15:15",
+	"inapplicable": [],
+	"incomplete": [],
+	"passes": [
+		{
+			"description": "Ensures buttons have discernible text",
+			"help": "Buttons must have discernible text",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/button-name?application=webdriverjs",
+			"id": "button-name",
+			"impact": null,
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": "Share",
+							"id": "button-has-visible-text",
+							"impact": "critical",
+							"message": "Element has inner text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<button class=\"ytp-button ytp-share-button\" title=\"Share\" aria-haspopup=\"true\" aria-owns=\"ytp-share-panel\">",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#walkthroughVideo > .wrapper.walkthrough-video-container > .row > .col-lg-8.col-md-8.col-sm-12.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-0.col-xs-offset-0 > .previewVideo",
+						"#player_uid_950369481_1 > .ytp-chrome-top.ytp-share-button-visible > .ytp-chrome-top-buttons > .ytp-button.ytp-share-button"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": "Watch Data.Census.gov Preview",
+							"id": "button-has-visible-text",
+							"impact": "critical",
+							"message": "Element has inner text that is visible to screen readers",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute exists and is not empty",
+							"relatedNodes": []
+						}
+					],
+					"html": "<button class=\"ytp-large-play-button ytp-button\" aria-label=\"Watch Data.Census.gov Preview\">",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#walkthroughVideo > .wrapper.walkthrough-video-container > .row > .col-lg-8.col-md-8.col-sm-12.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-0.col-xs-offset-0 > .previewVideo",
+						"#player_uid_950369481_1 > .ytp-thumbnail-overlay.ytp-cued-thumbnail-overlay > .ytp-large-play-button.ytp-button"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag412",
+				"section508",
+				"section508.22.a"
+			]
+		},
+		{
+			"description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+			"help": "Page must have means to bypass repeated blocks",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/bypass?application=webdriverjs",
+			"id": "bypass",
+			"impact": null,
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "header-present",
+							"impact": "moderate",
+							"message": "Page has a header",
+							"relatedNodes": []
+						}
+					],
+					"html": "<html id=\"censussearchresults-page\" lang=\"en\" class=\"deque-axe-is-ready\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#censussearchresults-page"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag241",
+				"section508",
+				"section508.22.o"
+			]
+		},
+		{
+			"description": "Ensures <img> elements have alternate text or a role of none or presentation",
+			"help": "Images must have alternate text",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/image-alt?application=webdriverjs",
+			"id": "image-alt",
+			"impact": null,
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"images/census-logo-white.png\" alt=\"Census Bureau Logo\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#innerPage > .header-fixed > .header-logo > img"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-alt",
+							"impact": "critical",
+							"message": "Element has an alt attribute",
+							"relatedNodes": []
+						}
+					],
+					"html": "<img src=\"images/timelineLargeJan.jpg\" class=\"largeTimelineImage\" alt=\"A timeline graphic showing the schedule for the next few releases of the new data platform.\">",
+					"impact": null,
+					"none": [],
+					"target": [
+						"#phasedReleases > .wrapper.phased-releases-container > .phaseImageConatiner > .largeTimelineImage"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag111",
+				"section508",
+				"section508.22.a"
+			]
+		},
+		{
+			"description": "Ensures links have discernible text",
+			"help": "Links must have discernible text",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/link-name?application=webdriverjs",
+			"id": "link-name",
+			"impact": null,
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"https://data.census.gov/\" class=\"header-logo\" title=\"Census.gov Home\"><img src=\"images/census-logo-white.png\" alt=\"Census Bureau Logo\"></a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > .header-fixed > .header-logo"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"mailto:cedsci.feedback@census.gov?Subject=CEDSCI%20Feedback\" title=\"Submit Feedback\">cedsci.feedback@census.gov</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > .header-fixed > .header-fixed-background > .feedbackLinkHeader.pull-right > a"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"version\" class=\"button-featured\" title=\"Start Exploring\">\n                <span>Start Exploring</span><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i>\n            </a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > .header-fixed > .homeBannerContainer > .wrapper > .button-featured"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/data.html\" title=\"Census.gov Data Main\">census.gov/data.html</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > .homeSubBanner > .wrapper > .col-lg-8.col-md-8.col-sm-12.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-0.col-xs-offset-0 > .centeredText > a"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/preview1/dataExplorer\" class=\"button-featured\" title=\"September Release\">\n                <span>September Release</span><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i>\n            </a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#phasedReleases > .wrapper.phased-releases-container > .phaseImageConatiner > a:nth-of-type(1)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"/preview2/search\" class=\"button-featured\" title=\"January Release\">\n                <span>January Release</span><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i>\n            </a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#phasedReleases > .wrapper.phased-releases-container > .phaseImageConatiner > a:nth-of-type(2)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"version\" class=\"button-featured\" title=\"Start Exploring\">\n                    <span>Start Exploring</span><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i>\n                </a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#newPlatform > .wrapper.new-platform-container > .row > .col-lg-8.col-md-8.col-sm-12.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-0.col-xs-offset-0 > .button-featured"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"mailto:cedsci.feedback@census.gov?Subject=CEDSCI%20Feedback\" class=\"feedbackLink\" title=\"Submit Feedback\">cedsci.feedback@census.gov</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#yourFeedback > .wrapper.your-feedback-container > .row > div:nth-of-type(4) > .feedbackLink"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/about/policies/privacy/privacy-policy.html#par_textimage_1\" target=\"blank\" title=\"\">\n                       Accessibility\n                    </a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > .footer-container > .footer-stripped > .wrapper > .col-xs-12 > a:nth-of-type(1)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/quality/\" target=\"blank\" title=\"\">\n                       Information Quality\n                    </a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > .footer-container > .footer-stripped > .wrapper > .col-xs-12 > a:nth-of-type(2)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/foia/\" target=\"blank\" title=\"\">\n                       FOIA\n                    </a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > .footer-container > .footer-stripped > .wrapper > .col-xs-12 > a:nth-of-type(3)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"http://www.census.gov/privacy/\" target=\"blank\" title=\"\">\n                       Data Protection and Privacy Policy\n                    </a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > .footer-container > .footer-stripped > .wrapper > .col-xs-12 > a:nth-of-type(4)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a href=\"https://www.commerce.gov/\" target=\"blank\" title=\"\">\n                       U.S. Department of Commerce\n                    </a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > .footer-container > .footer-stripped > .wrapper > .col-xs-12 > a:nth-of-type(5)"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a title=\"View Release Notes\" class=\"clickableLink releaseNotes\" href=\"./assets/Technology Preview Release Notes.docx\">Release Notes</a>",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#innerPage > .footer-container > .footer-stripped > .wrapper > .col-xs-12 > .clickableLink.releaseNotes"
+					]
+				},
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "has-visible-text",
+							"impact": "critical",
+							"message": "Element has text that is visible to screen readers",
+							"relatedNodes": []
+						}
+					],
+					"html": "<a class=\"ytp-title-link yt-uix-sessionlink\" target=\"_blank\" data-sessionlink=\"feature=player-title\" href=\"https://www.youtube.com/watch?v=gagvQ0qAtf0\">",
+					"impact": null,
+					"none": [
+						{
+							"data": null,
+							"id": "focusable-no-name",
+							"impact": "serious",
+							"message": "Element is not in tab order or has accessible text",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#walkthroughVideo > .wrapper.walkthrough-video-container > .row > .col-lg-8.col-md-8.col-sm-12.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-0.col-xs-offset-0 > .previewVideo",
+						"#player_uid_950369481_1 > .ytp-chrome-top.ytp-share-button-visible > .ytp-title > .ytp-title-text > .ytp-title-link.yt-uix-sessionlink"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag111",
+				"wcag412",
+				"section508",
+				"section508.22.a"
+			]
+		}
+	],
+	"timestamp": "2017-02-01T14:15:15.376Z",
+	"url": "https://data.census.gov/preview/",
+	"violations": [
+		{
+			"description": "Ensures <iframe> and <frame> elements contain a non-empty title attribute",
+			"help": "Frames must have title attribute",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/frame-title?application=webdriverjs",
+			"id": "frame-title",
+			"impact": "critical",
+			"nodes": [
+				{
+					"all": [],
+					"any": [
+						{
+							"data": null,
+							"id": "aria-label",
+							"impact": "critical",
+							"message": "aria-label attribute does not exist or is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "aria-labelledby",
+							"impact": "critical",
+							"message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "non-empty-title",
+							"impact": "critical",
+							"message": "Element has no title attribute or the title attribute is empty",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "role-presentation",
+							"impact": "moderate",
+							"message": "Element's default semantics were not overridden with role=\"presentation\"",
+							"relatedNodes": []
+						},
+						{
+							"data": null,
+							"id": "role-none",
+							"impact": "moderate",
+							"message": "Element's default semantics were not overridden with role=\"none\"",
+							"relatedNodes": []
+						}
+					],
+					"html": "<iframe class=\"previewVideo\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/gagvQ0qAtf0?rel=0\" frameborder=\"0\" allowfullscreen=\"\" cd_frame_id_=\"14f9ec3c7ddc49915c267b71ce09dba1\"></iframe>",
+					"impact": "critical",
+					"none": [],
+					"target": [
+						"#walkthroughVideo > .wrapper.walkthrough-video-container > .row > .col-lg-8.col-md-8.col-sm-12.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-0.col-xs-offset-0 > .previewVideo"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag241",
+				"section508",
+				"section508.22.i"
+			]
+		},
+		{
+			"description": "Ensures <video> elements have captions",
+			"help": "<video> elements must have captions",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/video-caption?application=webdriverjs",
+			"id": "video-caption",
+			"impact": "critical",
+			"nodes": [
+				{
+					"all": [],
+					"any": [],
+					"html": "<video tabindex=\"-1\" class=\"video-stream html5-main-video\" style=\"width: 648px; height: 315px; left: 0px; top: -315px;\"></video>",
+					"impact": "critical",
+					"none": [
+						{
+							"data": null,
+							"id": "caption",
+							"impact": "critical",
+							"message": "The multimedia element does not have a captions track",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#walkthroughVideo > .wrapper.walkthrough-video-container > .row > .col-lg-8.col-md-8.col-sm-12.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-0.col-xs-offset-0 > .previewVideo",
+						"#player_uid_950369481_1 > .html5-video-container > .video-stream.html5-main-video"
+					]
+				}
+			],
+			"tags": [
+				"wcag2a",
+				"wcag122",
+				"wcag123",
+				"section508",
+				"section508.22.a"
+			]
+		},
+		{
+			"description": "Ensures <video> elements have audio descriptions",
+			"help": "<video> elements must have an audio description track",
+			"helpUrl": "https://dequeuniversity.com/rules/axe/2.1/video-description?application=webdriverjs",
+			"id": "video-description",
+			"impact": "serious",
+			"nodes": [
+				{
+					"all": [],
+					"any": [],
+					"html": "<video tabindex=\"-1\" class=\"video-stream html5-main-video\" style=\"width: 648px; height: 315px; left: 0px; top: -315px;\"></video>",
+					"impact": "serious",
+					"none": [
+						{
+							"data": null,
+							"id": "description",
+							"impact": "serious",
+							"message": "The multimedia element does not have an audio description track",
+							"relatedNodes": []
+						}
+					],
+					"target": [
+						"#walkthroughVideo > .wrapper.walkthrough-video-container > .row > .col-lg-8.col-md-8.col-sm-12.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-0.col-xs-offset-0 > .previewVideo",
+						"#player_uid_950369481_1 > .html5-video-container > .video-stream.html5-main-video"
+					]
+				}
+			],
+			"tags": [
+				"wcag2aa",
+				"wcag125",
+				"section508",
+				"section508.22.b"
+			]
+		}
+	]
+}

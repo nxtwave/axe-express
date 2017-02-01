@@ -1,0 +1,34 @@
+[
+	{
+		"id": "001",
+		"url": "https://data.census.gov/preview/",
+		"title": "Beta 1 Home Page",
+		"enabled": true,
+		"runtime": "2017-02-01 09:15:04",
+		"violations": 3
+	},
+	{
+		"id": "003",
+		"url": "http://www.census.gov/data.html",
+		"title": "Census Data Page",
+		"enabled": true,
+		"runtime": "2017-02-01 09:15:04",
+		"violations": 7
+	},
+	{
+		"id": "004",
+		"url": "http://www.census.gov/library.html",
+		"title": "Census Library Page",
+		"enabled": true,
+		"runtime": "2017-02-01 09:15:04",
+		"violations": 4
+	},
+	{
+		"id": "005",
+		"url": "http://www.census.gov/about/policies/privacy/privacy-policy.html",
+		"title": "Census Data Protection and Privacy",
+		"enabled": true,
+		"runtime": "2017-02-01 09:15:04",
+		"violations": 3
+	}
+]
